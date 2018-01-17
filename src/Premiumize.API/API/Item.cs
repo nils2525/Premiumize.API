@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Premiumize.API.API
+namespace Premiumize.API
 {
     public static class Item
     {
