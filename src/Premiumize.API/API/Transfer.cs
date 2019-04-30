@@ -16,6 +16,10 @@ namespace Premiumize.API
         {
             return (TransferRequest)HtmlService.PostJson<TransferRequest>(new Uri("https://www.premiumize.me/api/transfer/create"), $"src={src}");
         }
+        public static TransferRequest2 Create2(string src)
+        {
+            return (TransferRequest2)HtmlService.PostJson<TransferRequest2>(new Uri("https://www.premiumize.me/api/transfer/create"), $"src={src}");
+        }
         public static BaseRequest Delete(string id)
         {
             return (BaseRequest)HtmlService.PostJson<BaseRequest>(new Uri("https://www.premiumize.me/api/transfer/delete"), $"id={id}");

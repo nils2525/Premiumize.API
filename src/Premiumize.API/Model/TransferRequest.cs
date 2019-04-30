@@ -31,4 +31,16 @@ namespace Premiumize.API.Model
         [JsonProperty("file_id")]
         public string File_ID { get; set; }
     }
+
+    public class TransferRequest2 : BaseRequest
+    {
+        [JsonProperty("location")]
+        public string Location { get; set; }
+        [JsonProperty("filename")]
+        public string FileName { get; set; }
+        [JsonProperty("filesize")]
+        public string FileSize { get; set; }
+        [JsonProperty("type")]
+        public string Type { get; set; }
+    }
 }

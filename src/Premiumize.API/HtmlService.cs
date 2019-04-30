@@ -79,7 +79,7 @@ namespace Premiumize.API
         /// <param name="url">Request URl</param>
         /// <param name="parameters">Parameters added to Body</param>
         /// <returns></returns>
-        public static object PostJson<T>(Uri url, string parameters = "")
+        public static T PostJson<T>(Uri url, string parameters = "")
         {
             // Add Auth params
             if (String.IsNullOrEmpty(parameters))
@@ -127,7 +127,7 @@ namespace Premiumize.API
 
                 return result;
             }
-            return null;
+            return default(T);
         }
     }
 }
